@@ -19,7 +19,7 @@ Then check the docker is started,
 
 ```$ sudo systemctl status docker```
 
-Restart your machine to reflect the change.\
+Restart your machine to reflect the change.
 
 About my TaxInvoiceCalculator
 ---
@@ -30,7 +30,7 @@ Category 1 -> Product id = 1 , Discount = 25 and gst = 0\
 Category 2 -> Product id = 2 , Discount = 17 and gst = 5\
 Category 3 -> Product id = 3 , Discount = 12 and gst = 12\
 Category 4 -> Product id = 4 , Discount = 9 and gst = 18\
-Category 5 -> Product id = 5 , Discount = 30 and gst = 10\
+Category 5 -> Product id = 5 , Discount = 30 and gst = 10
 
 
 Define Dockerfile
@@ -41,17 +41,17 @@ Define Dockerfile
 Stage one
 ---
 
-1. Using Ubuntu as a base image and make it alias "build".\
-2. Install openjdk-17 required to compile java code.\
-3. Copying all the source code files from the current working directory into the current working docker container.\
-4. Compile all java source code into byte code, specifying the byte codes(.class files) is stored inside the \app directory.\
+1. Using Ubuntu as a base image and make it alias "build".
+2. Install openjdk-17 required to compile java code.
+3. Copying all the source code files from the current working directory into the current working docker container.
+4. Compile all java source code into byte code, specifying the byte codes(.class files) is stored inside the \app directory.
 5. Now \app directory containes the application's byte code.
 
 Stage two
 ---
 
-1. Get the java's distroless image from GoogleContainerTools/distroless - Github.\
-2. Then copy the compiled binary from the build stage.\
+1. Get the java's distroless image from GoogleContainerTools/distroless - Github.
+2. Then copy the compiled binary from the build stage.
 3. Set the entry point for the binary to run the container.
 
 Build the Dockerfile
@@ -72,7 +72,7 @@ Publish the image into the dockerhub
 
 Check the image size
 ---
-```$ docker images```
+```$ docker images```\
 You felt awesome, because it reduces our image size by using the multi-stage-builds and distroless image.
 
 
