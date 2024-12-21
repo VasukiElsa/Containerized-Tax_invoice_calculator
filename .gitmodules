@@ -1,0 +1,3 @@
+[submodule "TaxInvoiceCalculator"]
+	path = TaxInvoiceCalculator
+	url = https://github.com/VasukiElsa/TaxInvoiceCalculator.git
