@@ -19,6 +19,8 @@ Then check the docker is started,
 
 ```$ sudo systemctl status docker```
 
+Restart your machine to reflect the change.\
+
 About my TaxInvoiceCalculator
 ---
 It calculates tax and gst based on category-based-product with discount and produces the final amount with caculated tax, discount and gst.\
