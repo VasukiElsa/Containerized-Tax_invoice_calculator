@@ -7,7 +7,7 @@ Verify that docker is running by:
 
 ```$ docker run hello-world```
 
-It shows permission denied error, because we install the docker with root user privilege. We want to add our ubuntu user to the docker group.
+It shows permission denied error, because we install the docker with root user privilege. We want to add user to the docker group.
 
 Add user to docker group
 ---
